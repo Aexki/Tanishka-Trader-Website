@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.MuiAppBar-root {
+    background-color: white !important;
+    height: 100px;
+}
+
+.navbarExplore:hover {
+    background-color: #ec374c !important;
+}
+
+.MuiStepIcon-root {
+    color: #ec374c !important;
+}
+
+.Mui-active {
+    color: #1976d2 !important;
+}
+
+.MuiStepLabel-label:hover {
+    color: #1976d2 !important;
+}
+
+.MuiImageListItemBar-title {
+    font-size: 40px !important;
+    height: 50px;
+    white-space: initial !important;
+    padding: 20px 0 5px 0;
+    line-height: 1.1 !important;
+    font-family: "Poiret One", cursive;
+    color: white;
+    transition: 0.3s;
+}
+
+@media (max-width: 1080px) {
+    .MuiImageListItemBar-title {
+        font-size: 25px !important;
+    }
+}
+
+.MuiImageListItemBar-subtitle {
+    font-size: 16px !important;
+    height: 50px !important;
+    padding-top: 10px;
+    width: 90%;
+    white-space: initial !important;
+    font-family: "Poiret One", cursive;
+}
+
+.categoryItem .MuiImageListItemBar-title:hover {
+    color: rgb(251, 140, 4) !important;
+    cursor: pointer;
+    height: 60px !important;
+}
+
+.categoryImages {
+    transition: 0.7s;
+    overflow-x: hidden;
+    height: 400px !important;
+}
+
+.categoryImagesSmall {
+    transition: 0.7s;
+    overflow-x: hidden;
+    height: 200px !important;
+}
+
+.categoryImages:hover {
+    transform: scale(1.1);
+}
+
+.box:hover {
+    cursor: pointer;
+    border-color: white;
+    box-shadow: -1px 2px 25px 3px white;
+    -webkit-box-shadow: -1px 2px 25px 3px white;
+    -moz-box-shadow: -1px 2px 25px 3px white;
+}
+
+.box-footer:hover {
+    cursor: pointer;
+    /* border-color: white;
+    box-shadow: -1px 2px 25px 3px black;
+    -webkit-box-shadow: -1px 2px 25px 3px black;
+    -moz-box-shadow: -1px 2px 25px 3px black; */
+}
+
+.product-description {
+    /* height: 200px; */
+}
+
+.color-card:hover {
+    cursor: pointer;
+}
+
+.contact-submit {
+    background-color: #d51b20 !important;
+}
+
+.contact-submit:hover {
+    background-color: #db4b50 !important;
+}
+
+.footer {
+    list-style: none;
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(129, 129, 129);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.subscribeEmail {
+    border: none;
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+.subscribeSubmit {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.subscribeSubmit:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.copyright {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    height: 60px;
+    font-family: "Poiret One", cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
