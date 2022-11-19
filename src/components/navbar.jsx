@@ -27,7 +27,7 @@ import { Product } from "./pages/product";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import { Contact } from "./pages/contact";
 import {
-  BrowserRouter as Router,
+//   BrowserRouter as Router,
   Routes,
   Route,
   Link,

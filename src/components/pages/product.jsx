@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
-import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
+// import ImageListItemBar from "@mui/material/ImageListItemBar";
 import {
     Box,
     Card,
@@ -14,49 +14,49 @@ import {
 import { useParams } from "react-router-dom";
 import { productDetails } from "../../assets/productDetails";
 
-const steps = [
-    {
-        index: 1,
-        label: "Customer Centricity",
-        description: `Our customers are at the core of our beliefs.
-      They inspire us to go the extra mile and create products that are of the highest quality and best in the world.`,
-        imgPath: "/slide1.jpg",
-    },
-    {
-        index: 2,
-        label: "Technology and Innovation",
-        description:
-            "Our world-class technology creates solutions that result in efficiency and brings more value to our customers.",
-        imgPath: "/slide2.jpg",
-    },
-    {
-        index: 3,
-        label: "Collaboration",
-        description:
-            "Through collaborations, we deliver unique and innovative experiences to our customers.",
-        imgPath: "/slide3.jpeg",
-    },
-    {
-        index: 4,
-        label: "Inclusive Growth",
-        description:
-            "We are socially aware and believe in educating, empowering, and creating a sustainable environment.",
-        imgPath: "/slide4.jpg",
-    },
-];
+// const steps = [
+//     {
+//         index: 1,
+//         label: "Customer Centricity",
+//         description: `Our customers are at the core of our beliefs.
+//       They inspire us to go the extra mile and create products that are of the highest quality and best in the world.`,
+//         imgPath: "/slide1.jpg",
+//     },
+//     {
+//         index: 2,
+//         label: "Technology and Innovation",
+//         description:
+//             "Our world-class technology creates solutions that result in efficiency and brings more value to our customers.",
+//         imgPath: "/slide2.jpg",
+//     },
+//     {
+//         index: 3,
+//         label: "Collaboration",
+//         description:
+//             "Through collaborations, we deliver unique and innovative experiences to our customers.",
+//         imgPath: "/slide3.jpeg",
+//     },
+//     {
+//         index: 4,
+//         label: "Inclusive Growth",
+//         description:
+//             "We are socially aware and believe in educating, empowering, and creating a sustainable environment.",
+//         imgPath: "/slide4.jpg",
+//     },
+// ];
 
 export const Product = () => {
-    const theme = useTheme();
+    // const theme = useTheme();
     const { category, item } = useParams();
-    const [activeStep, setActiveStep] = useState(0);
+    // const [activeStep, setActiveStep] = useState(0);
     const [currentColor, setCurrentColor] = useState(
         productDetails[category][item] &&
             productDetails[category][item].color[0]
     );
 
-    const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
+    // const handleStepChange = (step) => {
+    //     setActiveStep(step);
+    // };
 
     useEffect(() => {
         if (
