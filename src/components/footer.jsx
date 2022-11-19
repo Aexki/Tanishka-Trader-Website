@@ -315,7 +315,7 @@ export const Footer = () => {
                     >
                         Register now to get updates on promotions and coupons.
                         Or{" "}
-                        <a
+                        <span
                             onClick={() => {
                                 alert(
                                     "App currently under development, will be available soon."
@@ -328,7 +328,7 @@ export const Footer = () => {
                             }}
                         >
                             Download App
-                        </a>
+                        </span>
                     </Typography>
                 </Grid>
             </Grid>

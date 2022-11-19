@@ -281,6 +281,7 @@ export const Contact = () => {
                             href="https://web.whatsapp.com/send?phone=9090718208&text=&app_absent=0"
                             style={{ textDecoration: "none", color: "white" }}
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <Typography
                                 sx={{
