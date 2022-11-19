@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useTheme } from "@mui/material/styles";
+// import { useTheme } from "@mui/material/styles";
 // import SwipeableViews from "react-swipeable-views";
 import ImageListItem from "@mui/material/ImageListItem";
 // import ImageListItemBar from "@mui/material/ImageListItemBar";
