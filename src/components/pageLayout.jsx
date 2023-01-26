@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import NavBar from "./navbar";
-import { Chat } from "./chat";
 import Toolbar from "@mui/material/Toolbar";
 import PropTypes from "prop-types";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
@@ -65,7 +64,6 @@ export const PageLayout = (props) => {
                     <ArrowUpwardIcon />
                 </Fab>
             </ScrollTop>
-            {/* <Chat /> */}
             <Footer />
         </Router>
     );

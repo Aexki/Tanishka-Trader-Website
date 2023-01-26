@@ -13,10 +13,6 @@ import Snackbar from "@mui/material/Snackbar";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
-// import InputAdornment from "@mui/material/InputAdornment";
-
-// import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-// import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import $ from "jquery";
@@ -49,10 +45,9 @@ export const Contact = () => {
         e.preventDefault();
 
         $.post(
-            "https://script.google.com/macros/s/AKfycbz78YtgOeWSpMfSIzWI4vASrOEO1YgJ1GHp1gIqPixTGJnD99x_6dO2TCxAVWy_RTqpPw/exec",
+            "https://script.google.com/macros/s/AKfycby27rWAzqO3flOOSXG5Hpy4i0YFx_GQ9V4-0YF1iU7Xxh-lSVDU0IiufqeKonVYDYWUYg/exec",
             messageData
         ).then((response) => {
-            console.log(response);
             setMessage(response.message);
             setOpen(true);
         });
@@ -187,13 +182,6 @@ export const Contact = () => {
                                         name="firstName"
                                         placeholder="Enter Your First Name"
                                         fullWidth
-                                        // InputProps={{
-                                        //   startAdornment: (
-                                        //     <InputAdornment position="start">
-                                        //       <DriveFileRenameOutlineIcon sx={{ color: "black" }} />
-                                        //     </InputAdornment>
-                                        //   ),
-                                        // }}
                                         onChange={setData}
                                     />
                                 </Grid>
@@ -205,13 +193,6 @@ export const Contact = () => {
                                         name="lastName"
                                         placeholder="Enter Your Last Name"
                                         fullWidth
-                                        // InputProps={{
-                                        //   startAdornment: (
-                                        //     <InputAdornment position="start">
-                                        //       <DriveFileRenameOutlineIcon sx={{ color: "black" }} />
-                                        //     </InputAdornment>
-                                        //   ),
-                                        // }}
                                         onChange={setData}
                                     />
                                 </Grid>
@@ -223,13 +204,6 @@ export const Contact = () => {
                                         name="sendTo"
                                         placeholder="Enter Your Email Address"
                                         fullWidth
-                                        // InputProps={{
-                                        //   startAdornment: (
-                                        //     <InputAdornment position="start">
-                                        //       <EmailIcon sx={{ color: "black" }} />
-                                        //     </InputAdornment>
-                                        //   ),
-                                        // }}
                                         onChange={setData}
                                     />
                                 </Grid>
