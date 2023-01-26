@@ -169,20 +169,23 @@ const NavBar = (props) => {
                   </MenuItem>
                 </Link>
               ))}
-              <Button
-                variant="contained"
-                sx={{
-                  backgroundColor: "#d51b20",
-                  fontFamily: "Raleway",
-                  margin: "15px 20px",
-                  borderRadius: 0,
-                }}
-                className={"navbarExplore"}
-                href={"/category"}
-                target={"_blank"}
+              <Link
+                to={"/category"}
+                style={{ textDecoration: "none" }}
               >
-                Explore
-              </Button>
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#d51b20",
+                    fontFamily: "Raleway",
+                    margin: "15px 20px",
+                    borderRadius: 0,
+                  }}
+                  className={"navbarExplore"}
+                >
+                  Explore
+                </Button>
+              </Link>
             </Box>
           </Toolbar>
         </AppBar>
