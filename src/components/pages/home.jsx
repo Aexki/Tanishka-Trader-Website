@@ -14,6 +14,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import MobileStepper from "@mui/material/MobileStepper";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -112,19 +113,23 @@ export const Home = () => {
               <br />
               household amenities in Odisha.
             </Typography>
-            <Button
-              variant="contained"
-              sx={{
-                margin: "50px 0 0 0",
-                borderRadius: 0,
-                backgroundColor: "#d51b20",
-                fontFamily: "Raleway",
-              }}
-              className={"navbarExplore"}
-              href={"/category"}
+            <Link
+              to={"/category"}
+              style={{ textDecoration: "none" }}
             >
-              Explore
-            </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  margin: "50px 0 0 0",
+                  borderRadius: 0,
+                  backgroundColor: "#d51b20",
+                  fontFamily: "Raleway",
+                }}
+                className={"navbarExplore"}
+              >
+                Explore
+              </Button>
+            </Link>
           </Box>
         </Grid>
       </Grid>
