@@ -81,7 +81,7 @@ body {
 }
 
 .box-footer:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     /* border-color: white;
     box-shadow: -1px 2px 25px 3px black;
     -webkit-box-shadow: -1px 2px 25px 3px black;

@@ -29,6 +29,7 @@ export const Contact = () => {
         message: "",
     });
     const [open, setOpen] = useState(false);
+    const [message, setMessage] = useState(false);
 
     const handleClose = (event, reason) => {
         if (reason === "clickaway") {
@@ -48,12 +49,14 @@ export const Contact = () => {
         e.preventDefault();
 
         $.post(
-            "https://script.google.com/macros/s/AKfycbw5zZ2h5gv2Z_ObFTI_u-PfMa7TCv323NmkwOYGL4Tm7wFsEXRqs560gf96PVN2ecUm/exec",
+            "https://script.google.com/macros/s/AKfycbz78YtgOeWSpMfSIzWI4vASrOEO1YgJ1GHp1gIqPixTGJnD99x_6dO2TCxAVWy_RTqpPw/exec",
             messageData
         ).then((response) => {
+            console.log(response);
+            setMessage(response.message);
             setOpen(true);
-            document.getElementById("messageForm").reset();
         });
+        document.getElementById("messageForm").reset();
     };
 
     return (
@@ -69,7 +72,7 @@ export const Contact = () => {
                     severity="success"
                     sx={{ width: "100%" }}
                 >
-                    Message successfully recorded.
+                    {message}
                 </Alert>
             </Snackbar>
             <Grid
@@ -122,8 +125,9 @@ export const Contact = () => {
                             <LocationOnIcon sx={{ color: "black" }} />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <span>
-                                Soubhagya Nagar, Phase - 2, Unit-VIII,
-                                Bhubaneswar, Odisha
+                                Ground floor, Plot no. 653/915, Aurobindo
+                                Colony, BJB Nagar Rajarani Area, Bhubaneswar,
+                                Odisha. PIN - 751014
                             </span>
                         </Typography>
                         <Typography
@@ -132,7 +136,7 @@ export const Contact = () => {
                         >
                             <PhoneIcon sx={{ color: "black" }} />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>+91 9090718208</span>
+                            <span>+91 9793899313</span>
                         </Typography>
                         <Typography
                             my={3}
@@ -140,7 +144,7 @@ export const Contact = () => {
                         >
                             <MailIcon sx={{ color: "black" }} />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>admin@tanishka.com</span>
+                            <span>tanishkatraders18@gmail.com</span>
                         </Typography>
                     </Card>
                 </Grid>
@@ -278,7 +282,7 @@ export const Contact = () => {
                         }}
                     >
                         <a
-                            href="https://web.whatsapp.com/send?phone=9090718208&text=&app_absent=0"
+                            href="https://wa.me/919793899313?text=Hi"
                             style={{ textDecoration: "none", color: "white" }}
                             target="_blank"
                             rel="noreferrer"
@@ -295,7 +299,7 @@ export const Contact = () => {
                                         fontSize: { xs: "30px", lg: "50px" },
                                     }}
                                 />
-                                &nbsp;&nbsp; +91 9090718208
+                                &nbsp;&nbsp; +91 9793899313
                             </Typography>
                         </a>
                     </Card>
